@@ -161,11 +161,6 @@
       font-size: 0.82rem; color: var(--muted); line-height: 1.45;
     }
 
-    @media (max-width: 700px) {
-      .plan ul { grid-template-columns: 1fr; }
-      .invest-side { grid-template-columns: 1fr; }
-    }
-
     #cases { justify-content: flex-start; padding-top: clamp(2rem, 3.5vh, 2.75rem); }
     #cases .inner { max-width: 1080px; max-height: calc(100vh - 5.5rem); overflow-y: auto; scrollbar-width: thin; }
     #cases h2 { font-size: clamp(1.55rem, 3.8vh, 2.15rem); margin-bottom: 0.35rem; }
@@ -268,6 +263,7 @@
 
     @media (max-width: 700px) {
       .grid-3, .grid-2, .grid-4, .grid-cases-crm { grid-template-columns: 1fr; }
+      .plan ul, .invest-side { grid-template-columns: 1fr; }
       .slide-logo { left: 1rem; top: 1rem; }
       .nav-arrow--next { right: 1rem; }
       .flow-arrow { display: none; }
